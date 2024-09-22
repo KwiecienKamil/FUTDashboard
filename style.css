@@ -1,0 +1,52 @@
+:root {
+  --main: #1e1c1d;
+  --accent: #03f569;
+  --secondary: #313131;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* main wrapper */
+.app_wrapper {
+  font-family: "Jaro", sans-serif;
+  background-color: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* dashboard wrapper */
+.app_dashboard {
+  width: 100%;
+}
+/* Navbar */
+.app_dashboard_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 1.5rem;
+}
+.app_dashboard_navbar h1 {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.app_dashboard_navbar span {
+  color: var(--accent);
+}
+.app_dashboard_navbar #ea_logo {
+  width: 8rem;
+}
+
+/* Header */
+.app_dashboard_header {
+  text-align: center;
+}
+
+.app_dashboard_header h2 {
+  font-size: 1.6rem;
+  color: var(--accent);
+}
