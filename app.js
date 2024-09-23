@@ -9,10 +9,13 @@ const loadStats = [
   },
 ];
 
-const statsContentDiv = document.querySelector(
-  ".app_dashboard_stats_wrapper_content"
-);
+// Statistics component
+const statsContentDiv = document.querySelector(".app_dashboard_stats_wrapper");
 
-for (let i = 0; i > loadStats.length; i++) {
-  statsContentDiv.appendChild("div");
+for (let i = 0; i < loadStats.length; i++) {
+  const statDiv = document.createElement("div");
+
+  statDiv.innerHTML = `<h5>${loadStats[i].title}</h5> <span>${loadStats[i].stat}<span>`;
+  statDiv.classList.add("app_dashboard_stats_wrapper_content");
+  statsContentDiv.appendChild(statDiv);
 }
